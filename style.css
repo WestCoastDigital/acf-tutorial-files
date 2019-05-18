@@ -1,0 +1,90 @@
+/*
+ Theme Name:   West Coast Digital - GP Child Theme
+ Theme URI:    https://github.com/wcd-gp-starter
+ Description:  A GeneratePress starter child theme
+ Author:       Jon Mather
+ Author URI:   https://westcoastdigital.com.au
+ Template:     generatepress
+ Version:      1.0
+*/
+.home-slider .home-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-slider .home-slide .overlay {
+  background: linear-gradient(135deg, #1e5799 0%, rgba(125, 185, 232, 0) 100%);
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.home-slider .home-slide .overlay h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.home-slider .home-slide .overlay p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.home-slider .home-slide .overlay .button {
+  background-color: #bada55;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.2rem;
+}
+
+.cards-wrapper .zoom-effect-container {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cards-wrapper .zoom-effect-container .image-card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.cards-wrapper .zoom-effect-container .content {
+  position: absolute;
+  left: 0;
+  top: 300%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+  background: rgba(51, 51, 51, 0.5);
+}
+
+.cards-wrapper .zoom-effect-container .content h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.cards-wrapper .zoom-effect-container .content p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.cards-wrapper .zoom-effect-container:hover .image-card {
+  transform: scale(1.2);
+}
+
+.cards-wrapper .zoom-effect-container:hover .content {
+  top: 0;
+}
